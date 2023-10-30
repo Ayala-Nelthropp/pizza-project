@@ -8,6 +8,9 @@ font-family: "Courier Prime", sans-serif;
 }
 .eddie {
     background-color: #F1E8DD;
+    border-radius: 100px;
+    height: 180px;
+    width: 180px;
 }
 ul {
     list-style: none;
@@ -21,4 +24,13 @@ text-align: center;
 }
 .main-body{
 color: darkred;
+}
+
+.pad{
+    padding: 30px;
+    margin: auto;
+}
+.btn-outline-success {
+    background-color: #A1312E;
+    outline-color: white;
 }

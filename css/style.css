@@ -15,3 +15,10 @@ ul {
 .add-underline {
     text-decoration: underline;
 }
+.contact{
+text-align: center;
+    margin-bottom: 30px;
+}
+.main-body{
+color: darkred;
+}

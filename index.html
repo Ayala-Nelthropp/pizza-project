@@ -53,7 +53,7 @@
 
             <h1 class="text-center"><img  class="eddie" width="100" height="100" src="./img/EDDIE-SONS.jpg"></h1>
 
-            <div style="font-size: 30px; color: #A1312E" class="text-center">845-678-6178</div>
+            <div style="font-size: 30px; color: #A1312E; font-weight: bold"  class="text-center">845-678-6178</div>
             <div  class="text-center">
                 <p  class="add-underline">8700 Tesoro Dr San Antonio TX 78217</p>
             </div>
@@ -68,42 +68,85 @@
 </header>
     <div class="container">
         <div class="row">
-            <div class="col-6 d-flex justify-content-center gap-3 pad wide">
+            <div class="col-12 d-flex justify-content-center gap-3 pad wide">
                 <div class="d-flex gap-4 flex-column text-center">
                 <h1 class="text-decoration-underline">Order Here</h1>
-                    <form>
-                            <label for="pizza">Pizza Size:</label>
-                            <select name="pizza" id="pizza">
-                                <option name="pizza" id="pizza1" value="pizza-small">Small</option>
-                                <option name="pizza" id="pizza2" value="pizza-med">Medium</option>
-                                <option name="pizza" id="pizza3" value="pizza-lg">Large</option>
-                                <option name="pizza" id="pizza4" value="pizza-ex-lg">Ex-Large</option>
-                                <option name="pizza" id="pizza5" value="pizza-mega">Texas-Big</option>
-                            </select>
-                    </form>
-                    <form class="d-flex flex-column gap-2">
-                        <p>Cheese Topping:</p>
-                        <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese">Mozzarella</label>
-                        <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese2">Provolone</label>
-                        <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese3">Gouda</label>
-                        <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese4">Chedder</label>
-                    </form>
-                    <form class="d-flex flex-column gap-2">
-                        <p>Meat Toppings:</p>
-                        <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat">Pepperoni</label>
-                        <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat2">Chicken</label>
-                        <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat3">Sausage</label>
-                        <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat4">Steak</label>
-                    </form>
-                    <form class="d-flex flex-column gap-2">
-                        <p>Veggie Toppings:</p>
-                        <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie">Mushroom</label>
-                        <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie2">Green Peppers</label>
-                        <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie3">Onions</label>
-                        <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie4">Tomatoes</label>
-                    </form>
+                    <p>
+                        <a class="btn" data-bs-toggle="collapse" href="#collapsePizza" role="button" aria-expanded="false" aria-controls="collapseExample">
+                           ---- Pizza Size ----
+                        </a>
+
+                    </p>
+                    <div class="collapse" id="collapsePizza">
+                        <div class="card card-body">
+                            <form>
+                                <label for="pizza"></label>
+                                <select name="pizza" id="pizza">
+                                    <option name="pizza" id="pizza1" value="pizza-small">Small</option>
+                                    <option name="pizza" id="pizza2" value="pizza-med">Medium</option>
+                                    <option name="pizza" id="pizza3" value="pizza-lg">Large</option>
+                                    <option name="pizza" id="pizza4" value="pizza-ex-lg">Ex-Large</option>
+                                    <option name="pizza" id="pizza5" value="pizza-mega">Texas-Big</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <p>
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseCheese" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            ---- Cheese Toppings ----
+                        </a>
+
+                    </p>
+                    <div class="collapse" id="collapseCheese">
+                        <div class="card card-body">
+
+                            <form class="d-flex flex-column gap-2">
+                                <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese">Mozzarella</label>
+                                <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese2">Provolone</label>
+                                <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese3">Gouda</label>
+                                <label class="d-flex gap-3" for="cheese"><input type="checkbox" name="toppings" id="cheese4">Chedder</label>
+                            </form>
+                        </div>
+                    </div>
+                    <p>
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseMeat" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            ---- Meat Toppings ----
+                        </a>
+
+                    </p>
+                    <div class="collapse" id="collapseMeat">
+                        <div class="card card-body">
+                            <form class="d-flex flex-column gap-2">
+                                <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat">Pepperoni</label>
+                                <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat2">Chicken</label>
+                                <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat3">Sausage</label>
+                                <label class="d-flex gap-3" for="meat"><input type="checkbox" name="meat" id="meat4">Steak</label>
+                            </form>
+                        </div>
+                    </div>
+                    <p>
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseVeggie" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            ---- Veggie Toppings ----
+                        </a>
+
+                    </p>
+                    <div class="collapse" id="collapseVeggie">
+                        <div class="card card-body">
+                            <form class="d-flex flex-column gap-2">
+                                <p>Veggie Toppings:</p>
+                                <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie">Mushroom</label>
+                                <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie2">Green Peppers</label>
+                                <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie3">Onions</label>
+                                <label class="d-flex gap-3" for="veggie"><input type="checkbox" name="toppings" id="veggie4">Tomatoes</label>
+                            </form>
+                        </div>
+                    </div>
                     <form>
                         <p>Delivery Address</p>
+                        <form class="form-floating">
+                            <textarea rows="10px" type="email" class="form-control" id="floatingInputValue" placeholder="Enter Address"></textarea>
+                            <button class="btn btn-primary" type="submit"><a class="final-step" href="https://pauliegee.com/slice-shop#pizza" target="_blank">Submit</a></button>
+                        </form>
                     </form>
 
                 </div>

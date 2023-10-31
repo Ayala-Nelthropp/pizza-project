@@ -6,6 +6,7 @@ font-family: "Courier Prime", sans-serif;
     font-weight: 400;
     line-height: 19px;
 }
+
 .eddie {
     background-color: #F1E8DD;
     border-radius: 100px;
@@ -33,4 +34,18 @@ color: darkred;
 .btn-outline-success {
     background-color: #A1312E;
     outline-color: white;
+}
+.width{
+    width: 90%;
+    height: 310px;
+    z-index: 1;
+    left: 60px;
+    border-radius: 60px;
+
+
+
+}
+
+.index {
+    z-index: 2;
 }
